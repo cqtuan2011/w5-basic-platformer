@@ -14,11 +14,16 @@ namespace Game.Runtime
 
         public GameObject itemDrop;
         public Transform itemDropPoint;
+        public GameObject healthBarObject;
         // Start is called before the first frame update
         void Start()
         {
             anim = GetComponent<Animator>();
             currentHealth = maxHealth;
+        }
+        private void Update()
+        {
+            healthBarObject.GetComponent<HealthBar>().SetHealth(currentHealth);
         }
 
         public void TakeDamage(int damage)
@@ -42,6 +47,9 @@ namespace Game.Runtime
             anim.SetTrigger("Death");
             GetComponent<Collider2D>().enabled = false;
             GetComponent<WaypointFollower>().enabled = false;
+            GetComponent<AIOverlapDetector>().enabled = false;
+            GetComponent<EnemyMovement>().enabled = false;
+            healthBarObject.SetActive(false);
             this.enabled = false;
 
             if (dropItem)

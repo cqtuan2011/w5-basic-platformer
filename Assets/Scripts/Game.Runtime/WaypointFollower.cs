@@ -9,15 +9,9 @@ namespace Game.Runtime
         [SerializeField] private GameObject[] wayPoints;
         [SerializeField] private float movingSpeed = 2f;
 
-        private Animator anim;
 
         private int currentWaypointIndex = 0;
-        private bool isWalking;
 
-        private void Awake()
-        {
-            anim = GetComponent<Animator>();
-        }
         void Update()
         {
             FollowWaypoint();
@@ -28,14 +22,28 @@ namespace Game.Runtime
             if (Vector2.Distance(transform.position, wayPoints[currentWaypointIndex].transform.position) < .2f)
             {
                 currentWaypointIndex++;
-                transform.Rotate(new Vector3(0f, 180f, 0f));
-
                 if (currentWaypointIndex >= wayPoints.Length)
                 {
                     currentWaypointIndex = 0;
                 }
             }
+            Flip();
+            
             transform.position = Vector2.MoveTowards(transform.position, wayPoints[currentWaypointIndex].transform.position, Time.deltaTime * movingSpeed);
+        }
+
+        private void Flip()
+        {
+            Vector3 tmpScale = gameObject.transform.localScale;
+
+            if (wayPoints[currentWaypointIndex].transform.position.x < transform.position.x)
+            {
+                tmpScale.x = 1;
+            } else
+            {
+                tmpScale.x = -1;
+            }
+            gameObject.transform.localScale = tmpScale;
         }
     }
 }
