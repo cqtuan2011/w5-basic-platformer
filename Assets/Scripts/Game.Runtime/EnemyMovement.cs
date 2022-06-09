@@ -8,9 +8,16 @@ namespace Game.Runtime
     {
         public float enemyChasingSpeed = 2;
 
+        public int enemyDamage;
+        public Vector2 gizmosAttackSize;
+
+        public Transform attackPoint;
         public Transform targetToFollow;
+        public LayerMask playerLayer;
+
         private AIOverlapDetector detector;
         private Animator anim;
+
         private bool isWalking;
 
         private void Awake()
@@ -61,6 +68,7 @@ namespace Game.Runtime
                 {
                     isWalking = false;
                     enemyChasingSpeed = 0;
+                    anim.SetTrigger("Attack_2");
                 } else
                 {
                     isWalking = true;
@@ -70,6 +78,25 @@ namespace Game.Runtime
             {
                 GetComponent<WaypointFollower>().enabled = true;
             }
+        }
+
+        private void Attack() // set in event animation
+        {
+            Collider2D playerHit = Physics2D.OverlapBox(attackPoint.position, gizmosAttackSize, playerLayer);
+
+            if (playerHit != null)
+            {
+                playerHit.GetComponent<PlayerHealthSystem>().TakeDamage(this.enemyDamage);
+            } else
+            {
+                return;
+            }
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawCube(attackPoint.position, gizmosAttackSize);
         }
     }
 }

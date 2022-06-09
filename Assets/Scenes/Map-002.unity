@@ -278,6 +278,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &884660032 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 204343780980630177, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
+  m_PrefabInstance: {fileID: 2086595039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1071282783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,9 +730,37 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2096621484, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 884660032}
+    - target: {fileID: 2096621484, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
+      propertyPath: attackRange
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096621484, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
+      propertyPath: enemyDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096621484, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
       propertyPath: targetToFollow
       value: 
       objectReference: {fileID: 1221657350}
+    - target: {fileID: 2096621484, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
+      propertyPath: gizmosAttackSize.x
+      value: 0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096621484, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
+      propertyPath: gizmosAttackSize.y
+      value: 2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096621484, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126135609989435232, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2047484862, guid: 1df46dc120928aa47b995e48207daa6c, type: 3}
     - target: {fileID: 2126135610470341350, guid: c7683039a05304f4bb1033b2c7e9fcec, type: 3}
       propertyPath: m_RootOrder
       value: 3
