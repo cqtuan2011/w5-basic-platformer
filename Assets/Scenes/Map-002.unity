@@ -179,7 +179,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1500807197
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &4054243
@@ -2559,7 +2559,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1500807197
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &1548540355
@@ -2895,6 +2895,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 535807830727806667, guid: f06e331b2e45a5c4ba4abf81e425f906, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1670122396}
+    - target: {fileID: 535807830727806667, guid: f06e331b2e45a5c4ba4abf81e425f906, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1500807197
+      objectReference: {fileID: 0}
     - target: {fileID: 535807831681811724, guid: f06e331b2e45a5c4ba4abf81e425f906, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2967,6 +2975,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 375dda4005ee4794f8c5b4d33a09bd5f, type: 3}
+    - target: {fileID: 6440545455832971333, guid: f06e331b2e45a5c4ba4abf81e425f906, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440545455832971333, guid: f06e331b2e45a5c4ba4abf81e425f906, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1023142181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f06e331b2e45a5c4ba4abf81e425f906, type: 3}
 --- !u!1001 &1837254626
@@ -2984,6 +3000,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1670122396}
+    - target: {fileID: 1740640617, guid: 2f6e914f522e8f24eae891df650531c8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1500807197
+      objectReference: {fileID: 0}
     - target: {fileID: 1281739572891394247, guid: 2f6e914f522e8f24eae891df650531c8, type: 3}
       propertyPath: m_Name
       value: 100-01-WoodCutter
@@ -3076,11 +3096,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 18.307083, y: 22.358538}
-      - {x: -37.881565, y: 22.091385}
+    - - {x: 18.119028, y: 12.2035885}
+      - {x: -41.1414, y: 11.923803}
       - {x: -45.58994, y: -1.8041506}
       - {x: 75.66508, y: -2.0252917}
-      - {x: 73.15352, y: 19.879978}
+      - {x: 73.52963, y: 11.981686}
 --- !u!4 &1865572258
 Transform:
   m_ObjectHideFlags: 0
@@ -3703,7 +3723,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1500807197
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &2146924728
@@ -4083,7 +4103,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1023142181
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a45400e3aebc4c44b81c2765dee45ea2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4265,7 +4285,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1023142181
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2047484862, guid: 1df46dc120928aa47b995e48207daa6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4410,7 +4430,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1023142181
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2047484862, guid: 1df46dc120928aa47b995e48207daa6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
