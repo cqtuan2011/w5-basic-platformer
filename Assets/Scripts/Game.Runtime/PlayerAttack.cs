@@ -10,7 +10,7 @@ namespace Game.Runtime
         public Transform attackPoint;
         public float attackRange;
         public LayerMask enemyLayer;
-        public int attackDamage;
+        public int attackPower;
 
         private void Awake()
         {
@@ -27,10 +27,9 @@ namespace Game.Runtime
         {
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
             
-
             foreach (Collider2D enemy in hitEnemies)
             {
-                enemy.GetComponent<HealthSystem>().TakeDamage(attackDamage);
+                enemy.GetComponent<HealthSystem>().TakeDamage(attackPower);
             }
         }
 

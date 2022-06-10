@@ -400,7 +400,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 5
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -448,6 +448,7 @@ MonoBehaviour:
     m_Mode: 1
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
+  healthSystem: {fileID: 672409815}
   fill: {fileID: 786092860}
   objectToFollow: {fileID: 2126135609989435164}
   healthBarOffset: 3
@@ -590,7 +591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6777631110867211249, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
       propertyPath: m_Name
-      value: 200-01-Centipede_01
+      value: Creep 1
       objectReference: {fileID: 0}
     - target: {fileID: 6777631110867211249, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
       propertyPath: m_Layer
@@ -741,10 +742,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446c0f4a1d2030a4dad49b06e0207b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 5
   currentHealth: 0
   dropItem: 1
-  itemDrop: {fileID: 5426116887972828165, guid: 55b1481edf8d70c40a6a8ee3eed31d44, type: 3}
+  itemSpawnTime: 1.5
+  itemDrop: {fileID: 4456705557738634210, guid: c834d828f7480104a8f86a3f37551f14, type: 3}
   itemDropPoint: {fileID: 467490898}
   healthBarObject: {fileID: 787493769}
 --- !u!114 &2096621483
@@ -787,7 +789,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyChasingSpeed: 2
+  enemyDamage: 10
+  gizmosAttackSize: {x: 0.96, y: 2.07}
+  attackPoint: {fileID: 204343780980630177}
   targetToFollow: {fileID: 0}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &2123819871
 MonoBehaviour:
   m_ObjectHideFlags: 0

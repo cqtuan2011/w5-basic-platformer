@@ -9,10 +9,21 @@ namespace Game.Runtime
     {
         public Slider slider;
         public Gradient gradient;
+        public HealthSystem healthSystem;
 
         public Image fill;
         public Transform objectToFollow;
         public float healthBarOffset;
+        private void Start()
+        {
+            if (healthSystem != null)
+            {
+                slider.maxValue = healthSystem.maxHealth;
+            } else
+            {
+                return;
+            }
+        }
 
         private void Update()
         {

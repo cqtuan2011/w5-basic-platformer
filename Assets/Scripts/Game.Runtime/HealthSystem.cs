@@ -11,6 +11,7 @@ namespace Game.Runtime
         public int currentHealth;
 
         public bool dropItem;
+        public float itemSpawnTime = 1.5f;
 
         public GameObject itemDrop;
         public Transform itemDropPoint;
@@ -54,7 +55,7 @@ namespace Game.Runtime
 
             if (dropItem)
             {
-                Invoke("SpawnItem", 2f);
+                Invoke("SpawnItem", itemSpawnTime);
             }
         }
 

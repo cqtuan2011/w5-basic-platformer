@@ -19,6 +19,7 @@ namespace Game.Runtime
         private Animator anim;
 
         private bool isWalking;
+        public bool hitRangeGizmos;
 
         private void Awake()
         {
@@ -95,8 +96,11 @@ namespace Game.Runtime
 
         private void OnDrawGizmos()
         {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawCube(attackPoint.position, gizmosAttackSize);
+            if (hitRangeGizmos)
+            {
+                Gizmos.color = Color.yellow;
+                Gizmos.DrawCube(attackPoint.position, gizmosAttackSize);
+            }
         }
     }
 }
