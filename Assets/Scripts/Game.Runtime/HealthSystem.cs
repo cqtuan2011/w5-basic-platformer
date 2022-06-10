@@ -7,14 +7,17 @@ namespace Game.Runtime
     public class HealthSystem : MonoBehaviour
     {
         private Animator anim;
+        public bool isFinalBoss;
         public int maxHealth;
         public int currentHealth;
 
         public bool dropItem;
         public float itemSpawnTime = 1.5f;
 
-        public GameObject itemDrop;
-        public Transform itemDropPoint;
+        public GameObject victoryPanel;
+
+        public GameObject[] itemDropList;
+        public Transform[] itemDropPoint;
         public GameObject healthBarObject;
         // Start is called before the first frame update
         void Start()
@@ -57,11 +60,19 @@ namespace Game.Runtime
             {
                 Invoke("SpawnItem", itemSpawnTime);
             }
+
+            if (isFinalBoss)
+            {
+                victoryPanel.SetActive(true);
+            }
         }
 
         private void SpawnItem()
         {
-            Instantiate(itemDrop, itemDropPoint);
+            for (int i = 0; i < itemDropList.Length; i++)
+            {
+                Instantiate(itemDropList[i], itemDropPoint[i]);
+            }
         }
     }
 }

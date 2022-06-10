@@ -417,6 +417,7 @@ MonoBehaviour:
     m_Mode: 1
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
+  healthSystem: {fileID: 0}
   fill: {fileID: 1344469659}
   objectToFollow: {fileID: 6609921090869702171}
   healthBarOffset: 2.7
@@ -463,6 +464,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 374343760511972883, guid: 52e72ad17f9179f47a8387af59229410, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -32.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 374343760511972883, guid: 52e72ad17f9179f47a8387af59229410, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4
       objectReference: {fileID: 0}
@@ -488,7 +493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320956422939395549, guid: 52e72ad17f9179f47a8387af59229410, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6131156335665416492, guid: 52e72ad17f9179f47a8387af59229410, type: 3}
       propertyPath: m_SpriteLibraryAsset
@@ -601,7 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 8
+  jumpForce: 4
   jumpPower: 1
   groundCheckPoint: {fileID: 3361448651613104184}
   groundCheckSize: 0.41
@@ -625,7 +630,6 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
-  attackDamage: 30
   attackPower: 1
 --- !u!114 &1221657358
 MonoBehaviour:

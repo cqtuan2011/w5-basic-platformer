@@ -26,7 +26,7 @@ namespace Game.Runtime
         private void Attack() // set in event animation
         {
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
-            
+
             foreach (Collider2D enemy in hitEnemies)
             {
                 enemy.GetComponent<HealthSystem>().TakeDamage(attackPower);

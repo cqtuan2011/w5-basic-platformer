@@ -507,7 +507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2677770327479502098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 1.0799999, z: 0}
+  m_LocalPosition: {x: -2.12, y: 1.0799999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -521,6 +521,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 787951861, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 873538199, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555378094, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831695691, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1918558946, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6777631109866735113, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
       propertyPath: m_Controller
       value: 
@@ -742,12 +762,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446c0f4a1d2030a4dad49b06e0207b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  isFinalBoss: 0
+  maxHealth: 8
   currentHealth: 0
   dropItem: 1
   itemSpawnTime: 1.5
-  itemDrop: {fileID: 4456705557738634210, guid: c834d828f7480104a8f86a3f37551f14, type: 3}
-  itemDropPoint: {fileID: 467490898}
+  victoryPanel: {fileID: 0}
+  itemDropList:
+  - {fileID: 5426116887972828165, guid: 55b1481edf8d70c40a6a8ee3eed31d44, type: 3}
+  itemDropPoint:
+  - {fileID: 467490898}
   healthBarObject: {fileID: 787493769}
 --- !u!114 &2096621483
 MonoBehaviour:
@@ -762,10 +786,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectorSize: {x: 9.45, y: 3, z: 0}
-  positionOffset: {x: -0.3, y: 1.55, z: 0}
+  positionOffset: {x: -0.39, y: 1.55, z: 0}
   hitDetectorSize: {x: 1.09, y: -2.05, z: 0}
-  hitPositionOffset: {x: 0.05, y: 0.01, z: 0}
-  enemyChasingSpeed: 2
+  hitPositionOffset: {x: 0.11, y: 0.01, z: 0}
   hitBox: {fileID: 204343780980630177}
   playerLayer:
     serializedVersion: 2
@@ -790,12 +813,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyChasingSpeed: 2
   enemyDamage: 10
-  gizmosAttackSize: {x: 0.96, y: 2.07}
+  gizmosAttackSize: {x: 1.09, y: 2.05}
   attackPoint: {fileID: 204343780980630177}
   targetToFollow: {fileID: 0}
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+  hitRangeGizmos: 0
+  isFinalBoss: 0
 --- !u!114 &2123819871
 MonoBehaviour:
   m_ObjectHideFlags: 0

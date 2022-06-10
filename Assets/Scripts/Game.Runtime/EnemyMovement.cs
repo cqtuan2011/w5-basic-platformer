@@ -83,14 +83,11 @@ namespace Game.Runtime
 
         private void Attack() // set in event animation
         {
-            Collider2D playerHit = Physics2D.OverlapBox(attackPoint.position, gizmosAttackSize, playerLayer);
+            Collider2D[] playerHit = Physics2D.OverlapBoxAll(attackPoint.position, gizmosAttackSize, playerLayer);
 
-            if (playerHit != null)
+            foreach (Collider2D player in playerHit)
             {
-                playerHit.GetComponent<PlayerHealthSystem>().TakeDamage(this.enemyDamage);
-            } else
-            {
-                return;
+                player.GetComponent<PlayerHealthSystem>().TakeDamage(enemyDamage);
             }
         }
 

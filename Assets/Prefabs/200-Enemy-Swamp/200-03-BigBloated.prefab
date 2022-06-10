@@ -7,20 +7,68 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1741962047, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831695687, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: isFinalBoss
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831695688, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: hitRangeGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831695688, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: gizmosAttackSize.x
+      value: 2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831695688, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: gizmosAttackSize.y
+      value: 3.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831695689, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6777631109866735113, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 22100000, guid: b5418fc6f4b06fe49836457848dab073, type: 2}
-    - target: {fileID: 6777631109866735222, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 375dda4005ee4794f8c5b4d33a09bd5f, type: 3}
-    - target: {fileID: 6777631109866735223, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
-      propertyPath: m_SpriteLibraryAsset
-      value: 
-      objectReference: {fileID: 7108339969198208228, guid: 1376e664e695fca489b4f4cf5d7354f9, type: 3}
+      objectReference: {fileID: 9100000, guid: a00df15e7c1d05047b46d2caaa177fb1, type: 2}
+    - target: {fileID: 6777631109866735115, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6777631110867211248, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777631110867211248, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777631110867211248, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777631110867211248, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777631110867211248, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777631110867211248, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777631110867211248, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777631110867211248, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6777631110867211248, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
@@ -37,7 +85,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6777631110867211249, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
       propertyPath: m_Name
-      value: 200-03-BigBloated
+      value: Boss Final
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777631110867211249, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3b0eb33be76f974c8b5d3cdf4e4bab6, type: 3}

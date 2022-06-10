@@ -12,7 +12,6 @@ namespace Game.Runtime
         [SerializeField] Vector3 hitDetectorSize;
         [SerializeField] Vector3 hitPositionOffset;
 
-        public float enemyChasingSpeed;
         public Transform hitBox;
 
         public LayerMask playerLayer;

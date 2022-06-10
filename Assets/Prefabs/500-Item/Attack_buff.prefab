@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: attackBuff
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5426116887972828160, guid: 55b1481edf8d70c40a6a8ee3eed31d44, type: 3}
+      propertyPath: healthBuff
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5426116887972828165, guid: 55b1481edf8d70c40a6a8ee3eed31d44, type: 3}
       propertyPath: m_Name
       value: Attack_buff
